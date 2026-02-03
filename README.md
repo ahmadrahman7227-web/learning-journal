@@ -1,0 +1,1 @@
+# Jurnal Belajar ini berisi catatan dan latihan dari kurikulum Foundations.
