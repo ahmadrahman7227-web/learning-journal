@@ -28,31 +28,41 @@ Biasanya, untuk melakukan ini dalam alur kerja berbasis Git, Anda akan:
 
 ## Panduan Git & GitHub untuk Kolaborasi Tim
 
+### 1. Dasar Perintah Terminal
+- ⚠️**pwd**: Menampilkan lokasi folder saat ini.
+- ⚠️**ls**: Melihat isi folder.
+- ⚠️**cd nama_folder**: Masuk ke folder tertentu.
+- ⚠️**mkdir nama_folder**: Membuat folder baru.
+- ⚠️**touch nama_file.txt**: Membuat file kosong.
+- ⚠️**rm nama_file.txt**: Menghapus file.
+- ⚠️**code**: Membuka folder di VS Code
 ### 2. Setup Git
-- **git --version**: Cek apakah Git sudah terpasang.
-- **git config --global user.name "Nama Kamu"**: Atur nama pengguna Git.
-- **git config --global user.email "email@contoh.com"**: Atur email pengguna Git.
+- ⚠️**git --version**: Cek apakah Git sudah terpasang.
+- ⚠️**git config --global user.name "Nama Kamu"**: Atur nama pengguna Git.
+- ⚠️**git config --global user.email "email@contoh.com"**: Atur email pengguna Git.
 
 ### 3. Membuat Repository Lokal
-- **mkdir proyek-kolaborasi**: Membuat folder proyek.
-- **cd proyek-kolaborasi**: Masuk ke folder proyek.
-- **git init**: Inisialisasi Git di folder.
+- ⚠️**mkdir proyek-kolaborasi**: Membuat folder proyek.
+- ⚠️**cd proyek-kolaborasi**: Masuk ke folder proyek.
+- ⚠️**git init**: Inisialisasi Git di folder.
 
 ### 4. Menyimpan Perubahan
-- **git add**: Menambahkan semua file ke staging.
-- **git commit -m "pesan"**: Menyimpan perubahan dengan pesan.
+- ⚠️**git add**: Menambahkan semua file ke staging.
+- ⚠️**git commit -m "pesan"**: Menyimpan perubahan dengan pesan.
 
 ### 5. Hubungkan ke GitHub
-- **git remote add origin URL**: Menghubungkan repo lokal ke GitHub.- git push 
--**u origin main**: Mengirim kode ke GitHub.
+- ⚠️**git remote add origin URL**: Menghubungkan repo lokal ke GitHub.- git push 
+- ⚠️**u origin main**: Mengirim kode ke GitHub.
 
 ### 6. Kolaborasi
-- **git clone URL**: Mengambil project dari GitHub.
-- **git pull**: Mengambil update terbaru.
-- **git checkout -b nama_branch**: Membuat branch baru.
-- **git push origin nama_branch**: Mengirim branch ke GitHub.
-- **Pull Request & Merge**: Ajukan perubahan dan gabungkan ke main
-- **git push -u origin main**: Mengirim ke main
+- ⚠️**git clone URL**: Mengambil project dari GitHub.
+- ⚠️**git pull**: Mengambil update terbaru.
+- ⚠️**git checkout -b nama_branch**: Membuat branch baru.
+- ⚠️**git push origin nama_branch**: Mengirim branch ke GitHub.
+- ⚠️**Pull Request & Merge**: Ajukan perubahan dan gabungkan ke main
+- ⚠️**git push -u origin main**: Mengirim ke main
+
+---
 
 ## Alur Kerja Git
 
@@ -60,8 +70,8 @@ Biasanya, untuk melakukan ini dalam alur kerja berbasis Git, Anda akan:
 
 Perintah:
 
-**git clone https://github.com/username/nama-repo.git**
-**cd nama-repo**
+⚠️**git clone https://github.com/username/nama-repo.git**
+⚠️**cd nama-repo**
 
 Catatan: Jika kontribusi ke repo orang lain, lakukan fork di GitHub lalu clone hasil fork.
 
@@ -69,7 +79,7 @@ Catatan: Jika kontribusi ke repo orang lain, lakukan fork di GitHub lalu clone h
 
 Perintah:
 
-**git checkout -b feature/nama-fitur**
+⚠️**git checkout -b feature/nama-fitur**
 
 Catatan: Jangan bekerja langsung di branch main; gunakan nama branch yang jelas.
 
@@ -77,15 +87,15 @@ Catatan: Jangan bekerja langsung di branch main; gunakan nama branch yang jelas.
 
 Perintah:
 
-**git status**: 
+⚠️**git status**: 
 - Menunjukkan branch aktif
 - Menampilkan file yang berubah tapi belum di-stage
 - Menampilkan file yang sudah di-stage dan siap di-commit
 - Menampilkan file baru (untracked)
 👉 Jadi, fungsinya: melihat apa saja yang berubah sebelum git add dan git commit.
 
-**git add nama-file.js**
-**git commit -m "feat: tambah fitur login"**
+⚠️**git add nama-file.js**
+⚠️**git commit -m "feat: tambah fitur login"**
 
 Catatan: Gunakan pesan commit konvensional
 
@@ -93,7 +103,7 @@ Catatan: Gunakan pesan commit konvensional
 
 Perintah:
 
-**git push origin feature/nama-fitur**
+⚠️**git push origin feature/nama-fitur**
 
 ### Langkah 5: Buat Pull Request (PR)
 
@@ -104,13 +114,13 @@ deskripsi perubahan, minta review.
 
 Perintah jika perlu sinkronisasi dan menyelesaikan konflik:
 
-**git pull origin main**
+⚠️**git pull origin main**
 
 edit file konflik
 
-**git add**
-**git commit -m "fix: resolve merge conflict"**
-**git push**
+⚠️**git add**
+⚠️**git commit -m "fix: resolve merge conflict"**
+⚠️**git push**
 
 Catatan: Edit bagian konflik yang ditandai oleh Git (<<<<<<< >>>>>>>).
 
@@ -120,7 +130,7 @@ Instruksi: Setelah PR disetujui, merge ke main di GitHub. Semua anggota tim
 
 update repo lokal:
 
-**git pull origin main**
+⚠️**git pull origin main**
 
 Ringkasan Alur:- Clone/Fork -> Branch -> Edit & Commit -> Push -> PR -> Review -> Merge -> Sinkronisasi
 
