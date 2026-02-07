@@ -3,6 +3,7 @@
 
 ## Inspect element 
 adalah fitur browser yang bisa melihat elemen tersembunyi pada suatu website. Elemen tersebut tentu tidak bisa dilihat secara langsung karena terdiri dari kumpulan kode HTML (Hypertext Markup Language) dan CSS (Cascading Style Sheet). Keduanya merupakan bahasa yang membentuk tampilan sebuah website.
+---
 
 ## Open Chrome DevTools
 1. Keyboard Shortcuts
