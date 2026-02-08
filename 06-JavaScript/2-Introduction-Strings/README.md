@@ -1,6 +1,6 @@
 # Introduction Strings
 
-[08 - Februari - 2026]
+[8 - Februari - 2026]
 
 ---
 

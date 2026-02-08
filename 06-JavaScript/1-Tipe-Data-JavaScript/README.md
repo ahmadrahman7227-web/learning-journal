@@ -1,5 +1,7 @@
 # Tipe Data di JavaScript
 
+[8 - Februari - 2026]
+
 ---
 
 ## Tipe Data di JavaScript
@@ -65,7 +67,7 @@ Karakteristik var
 1. Harus dengan huruf, (_) atau ($).
 2. Tidak boleh mulai dengan angka.
 3. Case sensitive ((age) beda dengan (Age)). age: variabel pertama, Age: variabel kedua.
-4. Gunakan CamelCase (kata pertama huruf kecil, lalu setiap kata berikutnya diawali huruf besar tanpa spasi atau tanda pemisah).
+4. Gunakan **camelCase** (kata pertama huruf kecil, lalu setiap kata berikutnya diawali huruf besar tanpa spasi atau tanda pemisah).
 
 ```js
 // valid
