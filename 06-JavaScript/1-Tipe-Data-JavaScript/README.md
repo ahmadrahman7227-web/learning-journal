@@ -12,6 +12,14 @@ Digunakan untuk angka bulat ataupun desimal.
 2. String
 Digunakan untuk teks diapit tanda kutip ganda ("") atau tunggal ('').
 
+```js
+let pet = {
+  name: "Fluffy",
+  age: 3,
+  type: "dog"
+};
+```
+
 3. Boolean
 Nilai logika: true or false.
 
@@ -27,8 +35,21 @@ Kumpulan pasangan kunci nilai.
 7. Symbol
 Nilai unik yang tidak bisa diubah.
 
+Pada contoh di bawah ini, dua simbol dibuat dengan deskripsi yang sama, tetapi keduanya tidak sama.
+
+```js
+const cryticKey1 = Symbol ("saltNpepper");
+const cryticKey2 = Symbol ("saltNpepper");
+
+console.log(cypticKey1 === crypticKey2); // false
+```
+
 8. BigInt
 Untuk angka sangat besar.
+
+```js
+const veryBigNumber = 1234567890123456789012345678901234567890n;
+```
 
 9. Array
 Digunakan untuk menyimpan lebih dari satu elemen dalam satu variabel.
