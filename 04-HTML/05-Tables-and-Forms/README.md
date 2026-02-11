@@ -195,14 +195,14 @@ Mengelompokkan input terkait.
 
 ### Struktur Tabel
 
-- <table>: Membuat tabel.
-- <caption>: Judul tabel.
-- <thead>: Bagian kepala tabel.
-- <tbody>: Isi tabel.
-- <tfoot>: Bagian bawah tabel.
-- <tr>: Baris tabel.
-- <th>: Header kolom.
-- <td>: Data sel.
+- table: Membuat tabel.
+- caption: Judul tabel.
+- thead: Bagian kepala tabel.
+- tbody: Isi tabel.
+- tfoot: Bagian bawah tabel.
+- tr: Baris tabel.
+- th: Header kolom.
+- td: Data sel.
 - colspan: Menggabungkan beberapa kolom.
 
 ```html
