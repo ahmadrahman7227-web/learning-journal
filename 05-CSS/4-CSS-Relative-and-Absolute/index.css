@@ -1,0 +1,53 @@
+.kotak-px {
+  width: 100px;   /* selalu 100 pixel */
+  height: 50px;
+}
+
+.kotak-in {
+  width: 1in;     /* sama dengan 96px */
+}
+
+.kotak-cm {
+  width: 2cm;     /* sekitar 75.6px */
+}
+
+.kotak-mm {
+  width: 10mm;    /* sama dengan 1cm */
+}
+
+.kotak-q {
+  width: 40q;     /* sama dengan 1cm */
+}
+
+.kotak-pc {
+  font-size: 2pc; /* sekitar 32px */
+}
+
+.kotak-pt {
+  font-size: 12pt; /* sekitar 16px */
+}
+
+.parent {
+  width: 400px;
+  font-size: 16px;
+}
+
+.anak-percent {
+  width: 50%;   /* setengah dari parent */
+}
+
+.anak-em {
+  font-size: 2em; /* 2 × font parent = 32px */
+}
+
+.anak-rem {
+  font-size: 2rem; /* 2 × font root (html) */
+}
+
+.kotak-vh {
+  height: 50vh; /* setengah tinggi layar */
+}
+
+.kotak-vw {
+  width: 50vw;  /* setengah lebar layar */
+}

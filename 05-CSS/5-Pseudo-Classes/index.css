@@ -1,0 +1,158 @@
+/*User Action Pseudo-classes*/
+button:active {
+  background-color: red; /* saat tombol diklik */
+}
+
+button:hover {
+  background-color: yellow; /* saat mouse diarahkan */
+}
+
+input:focus {
+  border: 2px solid blue; /* saat input mendapat fokus */
+}
+
+.form:focus-within {
+  background-color: lightgray; /* jika form atau anaknya fokus */
+}
+
+/*Input Pseudo-classes*/
+input:enabled {
+  background-color: white; /* input aktif */
+}
+
+input:disabled {
+  background-color: lightgray; /* input tidak bisa dipakai */
+}
+
+input:checked {
+  outline: 2px solid green; /* checkbox/radio dicentang */
+}
+
+input:valid {
+  border: 2px solid green; /* input sesuai aturan validasi */
+}
+
+input:invalid {
+  border: 2px solid red; /* input tidak sesuai aturan */
+}
+
+input:in-range {
+  background-color: lightgreen; /* nilai dalam range */
+}
+
+input:out-of-range {
+  background-color: pink; /* nilai di luar range */
+}
+
+input:required {
+  border-left: 4px solid red; /* wajib diisi */
+}
+
+input:optional {
+  border-left: 4px solid gray; /* opsional */
+}
+
+input:autofill {
+  background-color: lightyellow; /* diisi otomatis oleh browser */
+}
+
+/*Location Pseudo-classes*/
+a:any-link {
+  color: blue; /* semua link */
+}
+
+a:link {
+  color: green; /* link belum dikunjungi */
+}
+
+a:visited {
+  color: purple; /* link sudah dikunjungi */
+}
+
+a:local-link {
+  color: orange; /* link internal (ke halaman yang sama) */
+}
+
+:target {
+  background-color: yellow; /* elemen yang jadi target URL fragment */
+}
+
+/*Tree-structural Pseudo-classes*/
+:root {
+  --main-color: blue; /* root html element */
+}
+
+div:empty {
+  border: 1px dashed red; /* div kosong */
+}
+
+li:nth-child(2) {
+  color: red; /* anak ke-2 */
+}
+
+li:nth-last-child(1) {
+  color: blue; /* anak terakhir */
+}
+
+p:first-child {
+  font-weight: bold; /* paragraf pertama */
+}
+
+p:last-child {
+  font-style: italic; /* paragraf terakhir */
+}
+
+p:only-child {
+  color: green; /* jika hanya ada satu anak */
+}
+
+p:first-of-type {
+  text-decoration: underline; /* elemen pertama dari jenisnya */
+}
+
+p:last-of-type {
+  color: orange; /* elemen terakhir dari jenisnya */
+}
+
+p:nth-of-type(2) {
+  color: purple; /* elemen ke-2 dari jenisnya */
+}
+
+p:only-of-type {
+  background-color: lightblue; /* satu-satunya elemen dari jenisnya */
+}
+
+/*Functional Pseudo-classes*/
+p:is(.example, .this-works-too) {
+  color: red; /* cocok dengan salah satu selector */
+}
+
+:where(h1, h2, h3) {
+  margin: 0; /* specificity = 0 */
+}
+
+article:has(h2) {
+  border: 2px solid hotpink; /* parent yang punya h2 */
+}
+
+p:not(.example) {
+  color: blue; /* semua p kecuali yang punya class example */
+}
+
+/*Pseudo-elements*/
+p::before {
+  content: "👉 "; /* ikon sebelum teks */
+}
+
+p::after {
+  content: " 👈"; /* ikon setelah teks */
+}
+
+p::first-letter {
+  font-size: 2em; /* huruf pertama lebih besar */
+  color: red;
+}
+
+li::marker {
+  color: green; /* ubah warna bullet list */
+}
