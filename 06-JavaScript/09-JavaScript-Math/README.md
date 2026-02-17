@@ -453,13 +453,28 @@ console.log(b); // 7 (karena 110 | 011 = 111 → 7)
 
 Boolean adalah tipe data yang hanya dapat memiliki dua nilai: **true** atau **false**.
 
+```js
+let isOldEnoughToDrive = true;
+
+if (isOldEnoughToDrive) {
+ console.log("You're old enough to drive"); // You're old enough to drive
+} else {
+ console.log("Sorry, you are not old enough to drive");
+```
+
 - Operator Equality (Kesamaan) **(==)**:
 
-Operator ini menggunakan konversi tipe sebelumnya memeriksa apakah nilainya sama.
+Untuk membandingkan dua nilai, Anda dapat menggunakan operator kesamaan atau kesamaan ketat. Hasil perbandingan akan berupa nilai boolean `true` atau `false`. 
+
+Berikut contoh penggunaan operator kesamaan untuk membandingkan string dan angka:
 
 ```js
 console.log(5 == '5'); // true
 ```
+
+⚠️ Dalam contoh diatas, JavaScript mengkonversi nilai string "5" menjadi angka dan kemudian memeriksa apakah keduanya sama.
+
+Operator kesamaan (equality operator) menggunakan konversi tipe sebelum memeriksa apkah setiap nilai sama.
 
 - Strict Equality (Kesamaan Ketat) **(===)** Operator:
 
@@ -469,13 +484,28 @@ Operator ini tidak melakukan konversi tipe dan memeriksa apakah tipe dan nilainy
 console.log(5 === '5'); // false
 ```
 
+⚠️ Perbandingan diatas akan menghasilkan (false), karena tipe data (string) tidak sama dengan tipe data (number).
+
+
 - Inequality (Ketidaksetaraan) **(!=)** Operator:
 
 Operator ini menggunakan konversi tipe sebelum memeriksa apakah nilainya sama atau tidak sama.
 
+```js
+console.log(5 != "5"); // false
+```
+
+⚠️ Dalam contoh ini, hasilnya akan seperti ini (false) karena operator ketidaksetaraan pertama-tama mengubah nilai string menjadi angka dan kemudian membandingkan nilainya. Karena nilainya akan sama, maka akan mengembalikan (false).
+
 - Strict Inequality (Ketidaksetaraan ketat) **(!==)** Operator:
 
 Operator ini tidak melakukan konversi tipe dan memeriksa apakah tipe dan nilainya tidak sama.
+
+```js
+console.log(5 !== "5"); // true
+```
+
+⚠️ Hasilnya akan seperti itu (true) karena operator ketidaksetaraan ketat tidak melakukan konversi tipe apa pun. Karena angka tersebut 5tidak sama dengan string "5", maka hasilnya adalah (true).
 
 ---
 
@@ -485,17 +515,53 @@ Operator ini tidak melakukan konversi tipe dan memeriksa apakah tipe dan nilainy
 
  Operator ini memeriksa apakah nilai di sebelah kiri lebih besar dari nilai di sebelah kanan.
 
+ ```js
+let a = 6;
+let b = 9;
+
+console.log(a > b); // false
+console.log(b > a); // true
+ ```
+
 - Operator Lebih Besar Dari **(>=)** atau Sama Dengan : 
 
 Operator ini memeriksa apakah nilai di sebelah kiri lebih besar dari atau sama dengan nilai di sebelah kanan.
+
+```js
+let a = 6;
+let b = 9;
+let c = 6;
+
+console.log(a >= b); // false
+console.log(b >= a); // true
+console.log(a >= c); // true
+```
 
 - Operator Kurang Dari **(<)** : 
 
 Operator ini memeriksa apakah nilai di sebelah kiri lebih kecil dari nilai di sebelah kanan.
 
+```js
+let a = 6;
+let b = 9;
+
+console.log(a < b); // true
+console.log(b < a); // false
+```
+
 - Operator Kurang Dari **(<=)** atau Sama Dengan :
 
  Operator ini memeriksa apakah nilai di sebelah kiri kurang dari atau sama dengan nilai di sebelah kanan.
+
+ ```js
+let a = 6;
+let b = 9;
+let c = 6;
+
+console.log(a <= b); // true
+console.log(b <= a); // false
+console.log(a <= c); // true
+ ```
 
  ---
 

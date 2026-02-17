@@ -40,11 +40,24 @@ Artinya: semua  akan berwarna merah dengan ukuran font 16px.
 👉 Untuk proyek nyata, eksternal CSS adalah pilihan terbaik karena lebih rapi dan mudah dikelola.
 
 ## Width & Height
-• 	 → lebar elemen
-• 	 → tinggi elemen
-• 	 /  → batas minimum/maksimum lebar
-• 	 /  → batas minimum/maksimum tinggi
+• width	 → lebar elemen
+• height	 → tinggi elemen
+• min-width	/ max-width → batas minimum/maksimum lebar
+• min-height / max-height → batas minimum/maksimum tinggi
+
 Contoh:
+
+```css
+.box {
+  width: 300px;          /* lebar tetap 300px */
+  height: 200px;         /* tinggi tetap 200px */
+  min-width: 150px;      /* lebar tidak boleh kurang dari 150px */
+  max-width: 500px;      /* lebar tidak boleh lebih dari 500px */
+  min-height: 100px;     /* tinggi minimum 100px */
+  max-height: 400px;     /* tinggi maksimum 400px */
+  background-color: lightblue;
+}
+```
 
 
 ## Kombinator CSS
@@ -104,9 +117,9 @@ Artinya: semua  yang berada setelah  dalam induk yang sama akan menjadi miring.
 
 ## Display: Inline vs Block
 
-• 	**Inline** → tidak memulai baris baru (contoh: , ).
-• 	**Block** → memulai baris baru dan memenuhi lebar (contoh: , ).
-• 	**Inline-block** → gabungan keduanya, bisa diatur  & .
+• 	**Inline** → tidak memulai baris baru.
+• 	**Block** → memulai baris baru dan memenuhi lebar.
+• 	**Inline-block** → gabungan keduanya, bisa diatur.
 
 ## Margin & Padding
 
@@ -132,6 +145,11 @@ Contoh: jika  diberi , maka teks di dalamnya akan otomatis biru kecuali ditimpa.
 
 1. Pewarisan Warna
 
+- Semua teks di dalam <body> akan otomatis berwarna biru, termasuk <h1>, <p>, dan <span>.
+- Ini terjadi karena properti color adalah salah satu properti yang dapat diwariskan.
+- Jadi, meskipun kita tidak menuliskan color: blue; pada <h1> atau <p>, mereka tetap mengikuti aturan dari induknya.
+
+
 ```css
 <!DOCTYPE html>
 <html>
@@ -153,6 +171,12 @@ Contoh: jika  diberi , maka teks di dalamnya akan otomatis biru kecuali ditimpa.
 
 2. Pewarisan dengan Penimpa
 
+- Secara default, semua teks akan hijau karena diwariskan dari <body>.
+- Namun, untuk elemen <p>, kita menuliskan aturan khusus color: red;.
+- Akibatnya, teks dalam <p> akan menimpa pewarisan dan tampil merah.
+- <span> tetap hijau karena tidak ada aturan khusus untuknya.
+
+
 ```css
 <!DOCTYPE html>
 <html>
@@ -173,3 +197,9 @@ Contoh: jika  diberi , maka teks di dalamnya akan otomatis biru kecuali ditimpa.
 </body>
 </html>
 ```
+
+⚠️ Inti Pewarisan CSS
+
+- Properti yang diwariskan: color, font-family, font-size, line-height, dll.
+- Properti yang tidak diwariskan: margin, padding, border, background, dll.
+- Override: Jika elemen anak punya aturan sendiri, maka aturan itu akan menggantikan pewarisan dari induk.
