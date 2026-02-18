@@ -11,7 +11,7 @@
 
 • :active → saat link diklik.
 
-• 	Urutan terbaik: LVHA (Link, Visited, Hover, Active).
+• Urutan terbaik: LVHA (Link, Visited, Hover, Active).
 
 Contoh:
 

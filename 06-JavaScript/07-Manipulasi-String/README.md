@@ -16,6 +16,14 @@ String adalah rangkaian karakter yang diapit oleh tanda kutip tunggal (''), tand
 .firstMethod().secondMethod()
 ```
 
+```js
+const result = "   hello world   "
+  .trim()       // hasil: "hello world"
+  .toUpperCase(); // hasil: "HELLO WORLD"
+
+console.log(result); // "HELLO WORLD"
+```
+
 - **Mengakses Karakter dari String**:
 
 Untuk mengakses kkarakter dari sebuah string, kita dapat menggunakan notasi kurung siku dan memasukan nomor indeks. **Indeks** adalah posisi karakter dalam sebuah string dan dimuai dari nol (0).

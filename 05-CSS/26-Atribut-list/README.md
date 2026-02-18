@@ -1,4 +1,4 @@
-#  Lists (Daftar)
+# Ordered List dengan Attribute Selector
 
 
 ## 	Jenis daftar:
@@ -103,4 +103,76 @@ ul {
   list-style-position: inside;
 }
 ```
+
+
+## HTML <ol> bisa diatur dengan atribut type:
+
+```css
+ol[type="A"] { list-style-type: upper-alpha; } /* A, B, C... */
+ol[type="a"] { list-style-type: lower-alpha; } /* a, b, c... */
+ol[type="I"] { list-style-type: upper-roman; } /* I, II, III... */
+ol[type="i"] { list-style-type: lower-roman; } /* i, ii, iii... */
+```
+
+## Jenis List di HTML
+
+HTML menyediakan beberapa tipe penomoran untuk ordered list (<ol>):
+
+- type="1" → Angka biasa
+
+Contoh: 1, 2, 3, ...
+
+```html
+<ol type="1">
+  <li>Item Satu</li>
+  <li>Item Dua</li>
+</ol>
+```
+
+- type="A" → Huruf besar
+
+Contoh: A, B, C, ...
+
+```html
+<ol type="A">
+  <li>Item Satu</li>
+  <li>Item Dua</li>
+</ol>
+```
+
+- type="a" → Huruf kecil
+
+Contoh: a, b, c, ...
+
+```html
+<ol type="a">
+  <li>Item Satu</li>
+  <li>Item Dua</li>
+</ol>
+```
+
+- type="I" → Angka Romawi besar
+
+Contoh: I, II, III, ...
+
+```html
+<ol type="I">
+  <li>Item Satu</li>
+  <li>Item Dua</li>
+</ol>
+```
+
+- type="i" → Angka Romawi kecil
+
+Contoh: i, ii, iii, ...
+
+```html
+<ol type="i">
+  <li>Item Satu</li>
+  <li>Item Dua</li>
+</ol>
+```
+
+
+
 
