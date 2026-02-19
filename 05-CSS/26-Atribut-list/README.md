@@ -3,9 +3,9 @@
 
 ## 	Jenis daftar:
 
-• <ul>	 → unordered list (bullet/lingkaran).
+• ul	 → unordered list (bullet/lingkaran).
 
-• <ol>	 → ordered list (angka/roman/alphabet).
+• ol	 → ordered list (angka/roman/alphabet).
 
 ## 	Styling Lists
 
