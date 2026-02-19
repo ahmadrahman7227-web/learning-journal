@@ -43,7 +43,7 @@
 <a href="https://example.com">Kunjungi Situs</a>
 ```
 
-## List (ul, ol, li): Elemen Daftar Tidak Berurutan ( ul) dan Berurutan (ol ) : Untuk membuat daftar berpoin, Anda harus menggunakan ulelemen dengan satu atau lebih lielemen yang bersarang di dalamnya seperti ini:
+## List (ul, ol, li): Elemen Daftar Tidak Berurutan (ul) dan Berurutan (ol) : Untuk membuat daftar berpoin, Anda harus menggunakan ul elemen dengan satu atau lebih li elemen yang bersarang di dalamnya seperti ini:
 
 ```html
 <ul>

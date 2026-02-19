@@ -3,11 +3,11 @@
 
 ## Hierarki Heading: Gunakan heading sesuai urutan logis.
 
-- **<h1>** → judul utama (hanya sekali per halaman).
+- **h1** → judul utama (hanya sekali per halaman).
 
-- **<h2>** → subjudul.
+- **h2** → subjudul.
 
-- Hingga **<h6>** → tingkat paling rendah.
+- Hingga **h6** → tingkat paling rendah.
 
 ```html
 <h1>Judul Utama</h1>
@@ -17,8 +17,8 @@
 
 ## Presentational Elements (deprecated): 
 
-Elemen lama seperti **<center>, <font> <big>**,hanya mengatur tampilan, tidak bermakna. Sekarang diganti dengan CSS.
+Elemen lama seperti **center, font, big**,hanya mengatur tampilan, tidak bermakna. Sekarang diganti dengan CSS.
 
 ## Semantic Elements: 
 
-Memberikan arti pada konten, misalnya **<header>, <nav>, <main>, <section>, <figure>.**
+Memberikan arti pada konten, misalnya **header, nav, main, section, figure.**

@@ -44,3 +44,10 @@
 </figure>
 ```
 
+- **footer Elemen** : Elemen ini ditempatkan di bagian bawah dokumen HTML dan biasanya berisi informasi hak cipta dan tautan halaman penting lainnya.
+
+```html
+<main>Konten utama</main>
+<footer>&copy; 2026 Ahmad</footer>
+```
+
