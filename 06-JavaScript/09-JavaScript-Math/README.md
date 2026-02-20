@@ -462,7 +462,7 @@ if (isOldEnoughToDrive) {
  console.log("Sorry, you are not old enough to drive");
 ```
 
-- Operator Equality (Kesamaan) **(==)**:
+- Operator Equality (Kesamaan) **(==)**: Membandingkan nilai (value)
 
 Untuk membandingkan dua nilai, Anda dapat menggunakan operator kesamaan atau kesamaan ketat. Hasil perbandingan akan berupa nilai boolean `true` atau `false`. 
 
@@ -476,7 +476,7 @@ console.log(5 == '5'); // true
 
 Operator kesamaan (equality operator) menggunakan konversi tipe sebelum memeriksa apkah setiap nilai sama.
 
-- Strict Equality (Kesamaan Ketat) **(===)** Operator:
+- Strict Equality (Kesamaan Ketat) **(===)** Operator: Membandingkan nilai (value)
 
 Operator ini tidak melakukan konversi tipe dan memeriksa apakah tipe dan nilainya sama.
 
@@ -487,7 +487,7 @@ console.log(5 === '5'); // false
 ⚠️ Perbandingan diatas akan menghasilkan (false), karena tipe data (string) tidak sama dengan tipe data (number).
 
 
-- Inequality (Ketidaksetaraan) **(!=)** Operator:
+- Inequality (Ketidaksetaraan) **(!=)** Operator: Membandingkan tipe
 
 Operator ini menggunakan konversi tipe sebelum memeriksa apakah nilainya sama atau tidak sama.
 
@@ -497,7 +497,7 @@ console.log(5 != "5"); // false
 
 ⚠️ Dalam contoh ini, hasilnya akan seperti ini (false) karena operator ketidaksetaraan pertama-tama mengubah nilai string menjadi angka dan kemudian membandingkan nilainya. Karena nilainya akan sama, maka akan mengembalikan (false).
 
-- Strict Inequality (Ketidaksetaraan ketat) **(!==)** Operator:
+- Strict Inequality (Ketidaksetaraan ketat) **(!==)** Operator: Membandingkan tipe
 
 Operator ini tidak melakukan konversi tipe dan memeriksa apakah tipe dan nilainya tidak sama.
 
@@ -717,23 +717,67 @@ console.log(theme); // hasil: 'light'
 Digunakan untuk operasi angka:
 
 - Math.random() → angka acak antara 0 dan <1.
+
+```js
+console.log(Math.random()); // contoh: 0.345678
+```
+
+
 - Math.max() / Math.min() → nilai terbesar / terkecil.
+
+```js
+console.log(Math.max(10, 20, 5)); // 20
+console.log(Math.min(10, 20, 5)); // 5
+```
 
 - Math.ceil() → bulat ke atas.
 
+```js
+console.log(Math.ceil(4.2)); // 5
+```
+
 - Math.floor() → bulat ke bawah.
+
+```js
+console.log(Math.floor(4.9)); // 4
+```
 
 - Math.round() → bulat ke terdekat.
 
+```js
+console.log(Math.round(4.4)); // 4
+console.log(Math.round(4.6)); // 5
+```
+
 - Math.trunc() → buang desimal.
+
+```js
+console.log(Math.trunc(4.9)); // 4
+```
 
 - Math.sqrt() → akar kuadrat.
 
+```js
+console.log(Math.sqrt(16)); // 4
+```
+
 - Math.cbrt() → akar kubik.
+
+```js
+console.log(Math.cbrt(27)); // 3
+```
 
 - Math.abs() → nilai absolut.
 
+```js
+console.log(Math.abs(-10)); // 10
+```
+
 - Math.pow(a, b) → pangkat.
+
+```js
+console.log(Math.pow(2, 3)); // 8
+```
 
 Contoh:
 
