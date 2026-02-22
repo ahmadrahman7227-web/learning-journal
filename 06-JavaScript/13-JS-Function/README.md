@@ -81,6 +81,71 @@ const square = number => number * number;
 
 console.log(square(5)); // Output: 25
 ```
+```js
+const greetings = name => console.log("Hello, " + name + "!");
+```
+
+- Jika fungsi panah Anda tidak memiliki parameter, maka Anda harus menggunakan tanda kurung seperti ini:
+
+```js
+const greetings = () => {
+  console.log("Hello");
+};
+```
+
+- Penting untuk dicatat bahwa menghapus tanda kurung dan kawat gigi keriting untuk sintaks fungsi reguler tidak akan berfungsi. Anda akan mendapatkan kesalahan jika Anda mencoba melakukan sesuatu seperti ini:
+
+```js
+// This will produce syntax errors 
+function greetings name console.log("Hello, " + name + "!");
+```
+
+- Berikut adalah contoh menggunakan sintaks fungsi panah untuk menghitung `area`:
+
+```js
+const calculateArea = (width, height) => {
+  const area = width * height;
+  return area;
+};
+
+console.log(calculateArea(5, 3)); // 15
+```
+
+- Kami membuat variabel di dalam fungsi yang disebut `area` dan kemudian mengembalikan variabel itu. Tapi kita bisa membersihkan kode kita sedikit dan mengembalikan perhitungan itu sendiri:
+
+```js
+const calculateArea = (width, height) => {
+  return width * height;
+}; 
+
+console.log(calculateArea(5, 3)); // 15
+```
+
+- Jika Anda mencoba untuk menghapus kawat gigi keriting dan menempatkan perhitungan pada baris yang sama, maka Anda akan mendapatkan `Uncaught SyntaxError: Unexpected token 'return'` pesan:
+
+```js
+const calculateArea = (width, height) => return width * height;
+```
+
+- Alasan mengapa Anda mendapatkan kesalahan ini, adalah karena Anda perlu menghapus returnpernyataan. Ketika Anda menghapus itu returnStatement, kesalahan akan hilang dan fungsinya masih akan secara implisit mengembalikan perhitungan.
+
+```js
+const calculateArea = (width, height) => width * height;
+```
+
+### Catatan Tambahan
+
+cara yang benar untuk menulis fungsi panah yang mengambil dua parameter dan mengembalikan jumlah mereka:
+
+```js
+(a, b) => a + b
+```
+
+cara yang benar untuk menulis fungsi panah yang tidak mengambil parameter dan mengembalikan string "Hello":
+
+```js
+() => "Hello"
+```
 
 
 ## Ruang Lingkup dalam Pemrograman (Scope in Programming)
@@ -129,3 +194,12 @@ console.log(blockVar); // This will throw an error
 ```
 
 ->  Dalam contoh ini, `blockVar` hanya dapat diakses di dalam `if` blok. Mencoba mengaksesnya di luar blok akan mengakibatkan kesalahan. Memahami berbagai jenis ruang lingkup ini sangat penting untuk mengelola aksesibilitas variabel dan menghindari efek samping yang tidak diinginkan dalam kode Anda.
+
+
+## Jenis Scope,Lokasi Pendeklarasian,Jangkauan Akses,Catatan Penting
+
+- Global,Di luar fungsi atau blok apa pun.,Bisa diakses dari mana saja di seluruh file.,Gunakan seperlunya saja. Terlalu banyak variabel global membuat kode berantakan (naming conflict).
+
+- Lokal (Fungsi),Di dalam sebuah fungsi function() { ... }.,Hanya bisa diakses di dalam fungsi tersebut.,"Variabel akan ""mati"" atau dihapus dari memori setelah fungsi selesai dijalankan."
+
+- Blok,"Di dalam kurung kurawal { ... } (seperti if, for, while).",Hanya bisa diakses di dalam kurung kurawal tersebut.,Khusus untuk variabel yang dibuat dengan kata kunci let dan const.
