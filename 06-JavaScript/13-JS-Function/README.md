@@ -46,7 +46,31 @@ const multiplyNumbers = function(firstNumber, secondNumber) {
 
 console.log(multiplyNumbers(4, 5)); // Output: 20
 ```
+### Perbedaan Parameter dan Argumen
 
+1. Parameter
+Bayangkan parameter sebagai "kotak kosong" yang sudah disiapkan di dalam sebuah fungsi untuk menerima data dari luar nantinya. Parameter ditulis di dalam tanda kurung () saat kamu mendeklarasikan sebuah fungsi.
+
+Contoh:
+````js
+JavaScript
+// 'nama' dan 'umur' di bawah ini adalah PARAMETER
+function perkenalan(nama, umur) {
+  console.log("Halo, nama saya " + nama + " dan umur saya " + umur + " tahun.");
+}
+```
+
+2. Argumen
+Argumen adalah isi dari "kotak kosong" tadi. Ini adalah nilai atau data nyata yang kamu kirimkan ke dalam fungsi saat kamu memanggil (menjalankan) fungsi tersebut.
+
+Contoh:
+```js
+// "Budi" dan 25 di bawah ini adalah ARGUMEN
+perkenalan("Budi", 25); 
+
+// "Andi" dan 30 adalah ARGUMEN yang berbeda untuk fungsi yang sama
+perkenalan("Andi", 30);
+```
 
 ## Fungsi Panah
 
