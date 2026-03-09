@@ -99,4 +99,4 @@ function showLunchMenu(menuArray) {
     
     console.log(`Menu items: ${itemsString}`);
   }
-}
+} 

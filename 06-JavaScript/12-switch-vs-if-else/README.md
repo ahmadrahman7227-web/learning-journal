@@ -40,6 +40,27 @@ if (score >= 750 && income >= 80000) {
 }
 ```
 
+```js
+function cekKesiapanMemasak(ingredients) {
+  let jumlahBahan = ingredients.length;
+
+  if (jumlahBahan >= 5) {
+    return "Bahan lengkap, mari mulai memasak!";
+  } else if (jumlahBahan > 0) {
+    return "Bahan masih kurang, perlu belanja lagi.";
+  } else {
+    return "Dapur kosong! Tidak ada bahan sama sekali.";
+  }
+}
+
+// Contoh pemanggilan:
+const kulkas = ["Telur", "Tepung", "Susu"];
+console.log(cekKesiapanMemasak(kulkas)); 
+// Output: "Bahan masih kurang, perlu belanja lagi."
+```
+
+- Secara singkat: console.log adalah "menampilkan pesan", sedangkan return adalah "memberikan hasil".
+
 
 ## Kesimpulan
 
