@@ -3,9 +3,9 @@
 
 ## Working with Loops
 
-- `for` Loop: 
+### `for` Loop: 
 
-This type of loop is used to repeat a block of code a certain number of times. This loop is broken up into three parts: the initialization statement, the condition, and the increment/decrement statement. The initialization statement is executed before the loop starts. It is typically used to initialize a counter variable. The condition is evaluated before each iteration of the loop. An iteration is a single pass through the loop. If the condition is true, the code block inside the loop is executed. If the condition is false, the loop stops and you move on to the next block of code. The increment/decrement statement is executed after each iteration of the loop. It is typically used to increment or decrement the counter variable.
+- This type of loop is used to repeat a block of code a certain number of times. This loop is broken up into three parts: the initialization statement, the condition, and the increment/decrement statement. The initialization statement is executed before the loop starts. It is typically used to initialize a counter variable. The condition is evaluated before each iteration of the loop. An iteration is a single pass through the loop. If the condition is true, the code block inside the loop is executed. If the condition is false, the loop stops and you move on to the next block of code. The increment/decrement statement is executed after each iteration of the loop. It is typically used to increment or decrement the counter variable.
 
 ```js
 for (let i = 0; i < 5; i++) {
@@ -16,9 +16,29 @@ for (let i = 0; i < 5; i++) {
 
 ```
 
-- `for...of` Loop: 
+### `for...of` Loop: 
 
 This type of loop is used when you need to loop over values from an iterable. Examples of iterables are arrays and strings.
+
+Berikut adalah sintaksis dasar untuk `for...of` loop:
+
+```js
+for (variable of iterable) {
+  // code block to be executed
+}
+```
+
+
+```js
+const str = 'freeCodeCamp';
+
+for (let char of str) {
+  console.log(char);
+}
+```
+
+- `char` yang akan mewakili karakter saat ini dalam string.
+- `num` yang akan mewakili nomor saat ini dalam array. 
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -28,7 +48,37 @@ for (const num of numbers) {
 }
 ```
 
-- `for...in` Loop: 
+```js
+const people = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Jim', age: 40 }
+];
+
+for (const person of people) {
+  console.log(`${person.name} is ${person.age} years old`);
+}
+```
+- Dalam contoh ini, kita memiliki berbagai objek yang disebut `people`. Setiap objek memiliki `name` dan `age` properti.
+Ketika kita loop melalui array, kita membuat variabel yang disebut personyang akan mewakili objek saat ini dalam array.
+Di dalam lingkaran, kami memasukkan pesan ke konsol.
+Pesan pertama akan menjadi `John is 30 years old`, Pesan yang kedua adalah `Jane is 25 years old`, dan pesan ketiga akan `Jim is 40 years old`.
+
+- Penting untuk dicatat bahwa Anda dapat menggunakan `let`, atau `const` ketika menyatakan variabel dalam `for...of` loop.
+Jika Anda akan menggunakan constNamun, pastikan bahwa nilai variabel tidak berubah di dalam lingkaran. Jika tidak, Anda akan mendapatkan kesalahan.
+Berikut ini adalah contoh penggunaan constyang menghasilkan kesalahan:
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+
+for (const num of numbers) {
+  console.log(num);
+  num = num + 1; // This will cause an error
+}
+```
+
+
+### `for...in` Loop: 
 
 This type of loop is best used when you need to loop over the properties of an object. This loop will iterate over all enumerable properties of an object, including inherited properties and non-numeric properties.
 
@@ -48,7 +98,7 @@ for (const prop in fruit) {
 // 0.99
 ```
 
-- `while` Loop: 
+### `while` Loop: 
 
 This type of loop will run a block of code as long as the condition is true.
 
@@ -67,7 +117,7 @@ while (i > 0) {
 
 ```
 
-- `do...while` Loop: 
+## `do...while` Loop: 
 
 This type of loop will execute the block of code at least once before checking the condition.
 
